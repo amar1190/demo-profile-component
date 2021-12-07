@@ -1,0 +1,22 @@
+/*
+This file is used for loading CSS that is common and needed throughout the website. 
+Example - CSS for navigation bar UI
+
+Also it contains CSS overiding materialize CSS.
+*/
+
+.title {
+    text-align: center;
+}
+
+.profile-icon {
+    height: inherit;
+}
+
+.brand-animation {
+    border-style: none;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
