@@ -84,6 +84,6 @@ i {
     padding: 2px;
 }
 
-.brand-logo {
-    padding-left: 1em;
+nav .brand-logo {
+    padding: 0em 0em 0em 1em;
 }
