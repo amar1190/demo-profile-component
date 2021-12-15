@@ -9,19 +9,14 @@ for (var i = 0; i < nods.length; i++) {
         nods[i].attributes["data-src"].value + "?a=" + Math.random();
 }
 
-//$( document ).ready() block.
 $(document).ready(function () {
-    console.log("Document is ready");
     if ($("#tabs_swipe").length) {
         $("#tabs_swipe").tabs({ swipeable: true });
     }
     $("ul.tabs").tabs();
-    // $(".dropdown-trigger").dropdown();
-    // override brower cache
 });
 
 function show_profile_card() {
-    console.log("Profile icon clicked");
     let ele = $("#profile-card");
     let visible = ele.css("display");
     if (visible == "block") {

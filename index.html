@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Demo Profile Card | By Dr. Manpreet Kaur</title>
+        <title>Demo Profile Card</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link
@@ -45,8 +45,12 @@
                                 </i>
                             </a>
                         </li>
-                        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
-                        <li><a href="https://www.gmail.com">Email</a></li>
+                        <li class="hide-on-med-and-down">
+                            <a href="https://www.linkedin.com">LinkedIn</a>
+                        </li>
+                        <li class="hide-on-med-and-down">
+                            <a href="https://www.gmail.com">Email</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -75,15 +79,40 @@
                             </li>
                         </ul>
                     </div>
+                    <!-- Information tab -->
                     <div id="info" class="card-content grey lighten-4">
-                        <div id="info1">Information 1</div>
-                        <div id="info2">Information 2</div>
-                        <div id="info3">Information 3</div>
+                        <div id="info1" class="profile-tabs-data">
+                            <p>Full Name</p>
+                            <p class="grey-text darken-3">Michael Jackson</p>
+                        </div>
+                        <div id="info2" class="profile-tabs-data">
+                            <p>Email</p>
+                            <p class="grey-text darken-3">
+                                duxxxxxxxxx@gxxxx.com
+                            </p>
+                        </div>
+                        <div id="info3" class="profile-tabs-data">
+                            <p>Phone Number</p>
+                            <p class="grey-text darken-3">+91 (999) XXX XXXX</p>
+                        </div>
+                        <button
+                            class="
+                                btn-small
+                                waves-effect waves-light
+                                profile-btn
+                            "
+                            type="submit"
+                            name="action"
+                        >
+                            Edit
+                            <i class="material-icons small">edit</i>
+                        </button>
                     </div>
+                    <!-- Settings tab -->
                     <div id="qsettings" class="card-content grey lighten-4">
-                        <div id="qsettings1" class="qsettings">
+                        <div id="qsettings1" class="profile-tabs-data">
                             <p>Email Notifications</p>
-                            <!-- Switch -->
+                            <!-- Toggle Switch -->
                             <div class="switch">
                                 <label>
                                     <input type="checkbox" />
@@ -91,9 +120,9 @@
                                 </label>
                             </div>
                         </div>
-                        <div id="qsettings2" class="qsettings">
+                        <div id="qsettings2" class="profile-tabs-data">
                             <p>SMS Notifications</p>
-                            <!-- Switch -->
+                            <!-- Toggle Switch -->
                             <div class="switch">
                                 <label>
                                     <input type="checkbox" />
@@ -101,9 +130,9 @@
                                 </label>
                             </div>
                         </div>
-                        <div id="qsettings3" class="qsettings">
+                        <div id="qsettings3" class="profile-tabs-data">
                             <p>Promotional Offers</p>
-                            <!-- Switch -->
+                            <!-- Toggle Switch -->
                             <div class="switch">
                                 <label>
                                     <input type="checkbox" />
@@ -111,11 +140,90 @@
                                 </label>
                             </div>
                         </div>
+                        <button
+                            class="
+                                btn-small
+                                waves-effect waves-light
+                                profile-btn
+                            "
+                            type="submit"
+                            name="action"
+                        >
+                            more...
+                        </button>
                     </div>
+                    <!-- Orders Tab -->
                     <div id="orders" class="card-content grey lighten-4">
-                        <div id="orders1">orders 1</div>
-                        <div id="orders2">orders 2</div>
-                        <div id="orders3">orders 3</div>
+                        <!-- first order -->
+                        <div id="orders1">
+                            <div class="card blue-grey darken-1 orders">
+                                <div class="orders-cards">
+                                    <p class="order-number darken-3">
+                                        Order #54321001
+                                    </p>
+                                    <span
+                                        class="order-status new orange badge"
+                                        data-badge-caption=""
+                                    >
+                                        In Transit
+                                    </span>
+                                </div>
+                                <div
+                                    class="
+                                        card-content
+                                        white-text
+                                        orders-content
+                                    "
+                                >
+                                    <span class="card-title">
+                                        Deep Breathing reminder cards (set of 4)
+                                    </span>
+                                    <p class="delivery-date">
+                                        Expected Delivery: 1st Jan
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="orders2">
+                            <div class="card blue-grey darken-1 orders">
+                                <div class="orders-cards">
+                                    <p class="order-number darken-3">
+                                        Order #54321000
+                                    </p>
+                                    <span
+                                        class="order-status new green badge"
+                                        data-badge-caption=""
+                                    >
+                                        Delivered
+                                    </span>
+                                </div>
+                                <div
+                                    class="
+                                        card-content
+                                        white-text
+                                        orders-content
+                                    "
+                                >
+                                    <span class="card-title">
+                                        Meditation/Yoga mat (1.5m - Purple)
+                                    </span>
+                                    <p class="delivery-date">
+                                        Delivered On: 25th Dec
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="
+                                btn-small
+                                waves-effect waves-light
+                                profile-btn
+                            "
+                            type="submit"
+                            name="action"
+                        >
+                            more...
+                        </button>
                     </div>
                 </div>
             </div>

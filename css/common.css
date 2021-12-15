@@ -5,6 +5,10 @@ Example - CSS for navigation bar UI
 Also it contains CSS overiding materialize CSS.
 */
 
+i {
+    vertical-align: middle;
+}
+
 .title {
     text-align: center;
 }
@@ -18,7 +22,7 @@ Also it contains CSS overiding materialize CSS.
 
 .brand-animation {
     border-style: none;
-    height: 400px;
+    height: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -26,15 +30,60 @@ Also it contains CSS overiding materialize CSS.
 
 .profile-card {
     display: none;
-    position: absolute;
+    position: fixed;
+    margin-right: 1em;
 }
 
 .card .card-content {
     padding: 24px 17px;
 }
 
-.qsettings {
+.profile-tabs-data {
     display: flex;
     justify-content: space-between;
     padding: 1.5%;
+}
+
+.profile-btn {
+    margin-top: 1.2em;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ee6e73;
+}
+
+.orders {
+    padding: 8px;
+    margin-bottom: 1em;
+}
+
+.orders-cards {
+    justify-content: space-between;
+    display: flex;
+}
+
+.orders-content {
+    padding: 0px 12px !important;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.delivery-date {
+    font-size: 12px;
+}
+
+.order-status {
+    font-weight: 500 !important;
+}
+
+.order-number {
+    color: #c6c6c6;
+    padding: 2px;
+}
+
+.brand-logo {
+    padding-left: 1em;
 }
