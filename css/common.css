@@ -10,7 +10,10 @@ Also it contains CSS overiding materialize CSS.
 }
 
 .profile-icon {
-    height: inherit;
+    height: 95%;
+    background-color: beige;
+    padding: 5%;
+    border-radius: 50%;
 }
 
 .brand-animation {
@@ -19,4 +22,19 @@ Also it contains CSS overiding materialize CSS.
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.profile-card {
+    display: none;
+    position: absolute;
+}
+
+.card .card-content {
+    padding: 24px 17px;
+}
+
+.qsettings {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5%;
 }

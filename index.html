@@ -24,22 +24,18 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
-        <!-- Profile card Structure -->
-        <ul id="dropdown1" class="dropdown-content">
-            <li><a href="#!">one</a></li>
-            <li><a href="#!">two</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">three</a></li>
-        </ul>
         <!-- Navbar -->
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper">
                     <a href="#!" class="brand-logo">Logo</a>
-                    <ul class="right hide-on-med-and-down">
-                        <!-- Dropdown Trigger -->
+                    <ul class="right">
                         <li>
-                            <a class="dropdown-trigger" data-target="dropdown1">
+                            <a
+                                class="dropdown-trigger"
+                                data-target="dropdown1"
+                                onclick="show_profile_card()"
+                            >
                                 <i class="material-icons">
                                     <img
                                         class="profile-icon"
@@ -54,6 +50,75 @@
                     </ul>
                 </div>
             </nav>
+        </div>
+        <!-- Profile card Structure -->
+        <div class="row">
+            <div class="col s12 m3 push-m9">
+                <div id="profile-card" class="card profile-card">
+                    <div class="card-content">
+                        <p>
+                            I am a very simple card. I am good at containing
+                            small bits of information. I am convenient because I
+                            require little markup to use effectively.
+                        </p>
+                    </div>
+                    <div class="card-tabs">
+                        <ul id="tabs_swipe" class="tabs tabs-fixed-width">
+                            <li class="tab">
+                                <a class="active" href="#info">Info</a>
+                            </li>
+                            <li class="tab">
+                                <a href="#qsettings">Quick Settings</a>
+                            </li>
+                            <li class="tab">
+                                <a href="#orders">Past Orders</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="info" class="card-content grey lighten-4">
+                        <div id="info1">Information 1</div>
+                        <div id="info2">Information 2</div>
+                        <div id="info3">Information 3</div>
+                    </div>
+                    <div id="qsettings" class="card-content grey lighten-4">
+                        <div id="qsettings1" class="qsettings">
+                            <p>Email Notifications</p>
+                            <!-- Switch -->
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div id="qsettings2" class="qsettings">
+                            <p>SMS Notifications</p>
+                            <!-- Switch -->
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div id="qsettings3" class="qsettings">
+                            <p>Promotional Offers</p>
+                            <!-- Switch -->
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="orders" class="card-content grey lighten-4">
+                        <div id="orders1">orders 1</div>
+                        <div id="orders2">orders 2</div>
+                        <div id="orders3">orders 3</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- main content -->
         <h1 class="title">Click on profile icon to view component</h1>
